@@ -1,0 +1,31 @@
+/**
+ * ==========================================================================
+ * ICON COMPONENT TOKENS
+ * ==========================================================================
+ * 
+ * Component-level tokens for icons.
+ * These reference primitive metric tokens.
+ * 
+ * Sizes from Figma:
+ * - xs: 12px
+ * - sm: 16px
+ * - md: 20px
+ * - lg: 24px
+ * - xl: 32px
+ * - 2xl: 40px
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* ==========================================================================
+   * ICON SIZES
+   * ========================================================================== */
+  
+  --size-icon-xs: var(--padding-spacing-size-3);   /* 12px */
+  --size-icon-sm: var(--padding-spacing-size-4);   /* 16px */
+  --size-icon-md: var(--padding-spacing-size-5);   /* 20px */
+  --size-icon-lg: var(--padding-spacing-size-6);   /* 24px */
+  --size-icon-xl: var(--padding-spacing-size-8);   /* 32px */
+  --size-icon-2xl: var(--padding-spacing-size-10); /* 40px */
+}

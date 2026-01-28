@@ -1,0 +1,52 @@
+/**
+ * ==========================================================================
+ * FONT DEFINITIONS
+ * ==========================================================================
+ * 
+ * @font-face declarations for Cera Pro font family.
+ * These fonts are used by the typography tokens.
+ * 
+ * Available weights:
+ * - Light (300)
+ * - Regular (400)
+ * - Medium (500)
+ * - Bold (700)
+ * 
+ * ==========================================================================
+ */
+
+/* Light - 300 */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular - 400 */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPRO-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,175 @@
+/**
+ * ==========================================================================
+ * SEMANTIC COLOR TOKENS (Light Theme)
+ * ==========================================================================
+ * 
+ * Contextual meaning mapped to primitives.
+ * These tokens should NEVER be used directly in components.
+ * 
+ * Usage: Component tokens reference these semantic tokens.
+ * 
+ * Token Hierarchy:
+ * Primitives → Semantic (this file) → Component
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* --------------------------------------------------------------------------
+   * BRAND
+   * -------------------------------------------------------------------------- */
+  
+  /* Primary */
+  --brand-primary-lit-high: var(--color-blue-300);
+  --brand-primary-lit: var(--color-blue-500);
+  --brand-primary-main: var(--color-blue-600);
+  --brand-primary-dim: var(--color-blue-700);
+  --brand-primary-dim-low: var(--color-blue-800);
+
+  /* Secondary */
+  --brand-secondary-lit: var(--color-teal-500);
+  --brand-secondary-main: var(--color-teal-700);
+  --brand-secondary-dim: var(--color-teal-900);
+
+  /* Accent */
+  --brand-accent-lit: var(--color-pink-500);
+  --brand-accent-main: var(--color-pink-700);
+  --brand-accent-dim: var(--color-pink-900);
+
+  /* --------------------------------------------------------------------------
+   * SYSTEM
+   * -------------------------------------------------------------------------- */
+  
+  /* Information */
+  --system-information-lit: var(--color-blue-300);
+  --system-information-main: var(--color-blue-500);
+  --system-information-dim: var(--color-blue-700);
+
+  /* Success */
+  --system-success-lit-high: var(--color-green-100);
+  --system-success-lit: var(--color-green-300);
+  --system-success-main: var(--color-green-500);
+  --system-success-dim: var(--color-green-700);
+
+  /* Error */
+  --system-error-lit-high: var(--color-red-100);
+  --system-error-lit: var(--color-red-500);
+  --system-error-main: var(--color-red-600);
+  --system-error-dim: var(--color-red-700);
+  --system-error-dim-low: var(--color-red-800);
+
+  /* Warning */
+  --system-warning-lit-high: var(--color-yellow-100);
+  --system-warning-lit: var(--color-yellow-300);
+  --system-warning-main: var(--color-yellow-500);
+  --system-warning-dim: var(--color-yellow-800);
+
+  /* --------------------------------------------------------------------------
+   * BACKGROUND
+   * -------------------------------------------------------------------------- */
+  
+  /* Container */
+  --background-container-sunken-lowest: var(--color-gray-pale-300);
+  --background-container-sunken-low: var(--color-gray-pale-200);
+  --background-container-sunken: var(--color-gray-pale-50);
+  --background-container-flat: var(--color-solid-white);
+  --background-container-raised: var(--color-blue-50);
+  --background-container-raised-high: var(--color-blue-100);
+  --background-container-raised-highest: var(--color-blue-200);
+  --background-container-disabled: var(--color-gray-pale-100);
+  --background-container-contrast: var(--color-gray-pale-950);
+  --background-container-opacity-0: var(--color-gray-pale-950-alpha-0);
+
+  /* Container - Status */
+  --background-container-information-dim: var(--system-information-dim);
+  --background-container-success-lit: var(--color-green-50);
+  --background-container-success-dim: var(--color-green-500);
+  --background-container-warning-lit: var(--color-yellow-50);
+  --background-container-warning-dim: var(--color-yellow-500);
+  --background-container-error-lit: var(--color-red-50);
+  --background-container-error-dim: var(--color-red-600);
+
+  /* Scroll */
+  --background-scroll-main: var(--color-gray-pale-950-alpha-6);
+  --background-scroll-handle: var(--color-gray-pale-400);
+
+  /* Overlay */
+  --background-overlay-opacity-high: var(--color-gray-pale-950-alpha-88);
+  --background-overlay-opacity-med: var(--color-gray-pale-950-alpha-38);
+  --background-overlay-main-opacity-low: var(--color-gray-pale-950-alpha-6);
+
+  /* --------------------------------------------------------------------------
+   * BORDER
+   * -------------------------------------------------------------------------- */
+  
+  /* Container */
+  --border-container-normal: var(--color-gray-pale-400);
+  --border-container-weak: var(--color-gray-pale-300);
+  --border-container-strong: var(--color-gray-pale-600);
+  --border-container-disabled: var(--color-gray-pale-200);
+  --border-container-hover: var(--brand-primary-main);
+  --border-container-selected: var(--brand-primary-main);
+
+  /* Container - Status */
+  --border-container-information: var(--system-information-main);
+  --border-container-success: var(--system-success-main);
+  --border-container-warning: var(--system-warning-dim);
+  --border-container-error: var(--system-error-main);
+
+  /* --------------------------------------------------------------------------
+   * ICON
+   * -------------------------------------------------------------------------- */
+  
+  /* Global */
+  --icon-global-normal: var(--color-gray-pale-950);
+  --icon-global-placeholder: var(--color-gray-pale-400);
+  --icon-global-disabled: var(--color-gray-pale-400);
+  --icon-global-contrast: var(--color-solid-white);
+
+  /* Global - Status */
+  --icon-global-success: var(--system-success-dim);
+  --icon-global-warning: var(--system-warning-dim);
+  --icon-global-error: var(--system-error-dim-low);
+
+  /* Global - Primary */
+  --icon-global-primary-lit: var(--brand-primary-lit);
+  --icon-global-primary: var(--brand-primary-main);
+  --icon-global-primary-dim: var(--brand-primary-dim);
+
+  /* Global - Links */
+  --icon-global-link: var(--brand-primary-main);
+  --icon-global-link-hover: var(--brand-primary-lit);
+  --icon-global-link-pressed: var(--brand-primary-dim);
+
+  /* Global - Special */
+  --icon-global-logo: var(--color-blue-950);
+
+  /* --------------------------------------------------------------------------
+   * TEXT
+   * -------------------------------------------------------------------------- */
+  
+  /* Global */
+  --text-global-header: var(--color-gray-pale-800);
+  --text-global-body: var(--color-gray-pale-950);
+  --text-global-caption: var(--color-gray-pale-400);
+  --text-global-placeholder: var(--color-gray-pale-500);
+  --text-global-disabled: var(--color-gray-pale-400);
+  --text-global-contrast: var(--color-solid-white);
+
+  /* Global - Status */
+  --text-global-success-main: var(--system-success-main);
+  --text-global-success-dim: var(--system-success-dim);
+  --text-global-warning: var(--system-warning-dim);
+  --text-global-error: var(--system-error-main);
+  --text-global-error-dim: var(--system-error-dim-low);
+
+  /* Global - Primary */
+  --text-global-primary-lit: var(--brand-primary-lit);
+  --text-global-primary: var(--brand-primary-main);
+  --text-global-primary-dim: var(--brand-primary-dim);
+
+  /* Global - Links */
+  --text-global-link: var(--brand-primary-lit);
+  --text-global-link-hover: var(--brand-primary-lit);
+  --text-global-link-pressed: var(--brand-primary-dim);
+}

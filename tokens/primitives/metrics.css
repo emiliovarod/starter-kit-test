@@ -1,0 +1,97 @@
+/**
+ * ==========================================================================
+ * PRIMITIVE METRIC TOKENS
+ * ==========================================================================
+ * 
+ * Raw dimension values only. No semantic meaning.
+ * These tokens should NEVER be used directly in components.
+ * 
+ * Usage: Semantic tokens reference these primitives.
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* --------------------------------------------------------------------------
+   * SPACING
+   * --------------------------------------------------------------------------
+   * Base unit: 4px
+   * Scale: 0 → 91 (multiplier-based naming)
+   * -------------------------------------------------------------------------- */
+  --padding-spacing-size-0: 0px;
+  --padding-spacing-size-px: 1px;
+  --padding-spacing-size-0_5: 2px;
+  --padding-spacing-size-1: 4px;
+  --padding-spacing-size-1_5: 6px;
+  --padding-spacing-size-2: 8px;
+  --padding-spacing-size-2_5: 10px;
+  --padding-spacing-size-3: 12px;
+  --padding-spacing-size-4: 16px;
+  --padding-spacing-size-5: 20px;
+  --padding-spacing-size-6: 24px;
+  --padding-spacing-size-7: 28px;
+  --padding-spacing-size-8: 32px;
+  --padding-spacing-size-9: 36px;
+  --padding-spacing-size-10: 40px;
+  --padding-spacing-size-11: 44px;
+  --padding-spacing-size-12: 48px;
+  --padding-spacing-size-14: 56px;
+  --padding-spacing-size-16: 64px;
+  --padding-spacing-size-20: 80px;
+  --padding-spacing-size-24: 96px;
+  --padding-spacing-size-28: 112px;
+  --padding-spacing-size-32: 128px;
+  --padding-spacing-size-38: 152px;
+  --padding-spacing-size-56: 224px;
+  --padding-spacing-size-60: 240px;
+  --padding-spacing-size-91: 364px;
+
+  /* --------------------------------------------------------------------------
+   * BORDER RADIUS
+   * -------------------------------------------------------------------------- */
+  --border-radius-rounded-none: 0px;
+  --border-radius-rounded-sm: 2px;
+  --border-radius-rounded: 4px;
+  --border-radius-rounded-md: 6px;
+  --border-radius-rounded-lg: 8px;
+  --border-radius-rounded-xl: 12px;
+  --border-radius-rounded-2xl: 16px;
+  --border-radius-rounded-3xl: 24px;
+  --border-radius-rounded-full: 9999px;
+
+  /* --------------------------------------------------------------------------
+   * BORDER WIDTH
+   * -------------------------------------------------------------------------- */
+  --border-width-border-0: 0px;
+  --border-width-border: 1px;
+  --border-width-border-2: 2px;
+  --border-width-border-4: 4px;
+  --border-width-border-8: 8px;
+
+  /* --------------------------------------------------------------------------
+   * OPACITY
+   * --------------------------------------------------------------------------
+   * Values: 0–100 (percentage)
+   * -------------------------------------------------------------------------- */
+  --opacity-opacity-0: 0;
+  --opacity-opacity-5: 0.05;
+  --opacity-opacity-10: 0.1;
+  --opacity-opacity-15: 0.15;
+  --opacity-opacity-20: 0.2;
+  --opacity-opacity-25: 0.25;
+  --opacity-opacity-30: 0.3;
+  --opacity-opacity-35: 0.35;
+  --opacity-opacity-40: 0.4;
+  --opacity-opacity-45: 0.45;
+  --opacity-opacity-50: 0.5;
+  --opacity-opacity-55: 0.55;
+  --opacity-opacity-60: 0.6;
+  --opacity-opacity-65: 0.65;
+  --opacity-opacity-70: 0.7;
+  --opacity-opacity-75: 0.75;
+  --opacity-opacity-80: 0.8;
+  --opacity-opacity-85: 0.85;
+  --opacity-opacity-90: 0.9;
+  --opacity-opacity-95: 0.95;
+  --opacity-opacity-100: 1;
+}

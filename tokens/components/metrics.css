@@ -1,0 +1,694 @@
+/**
+ * ==========================================================================
+ * COMPONENT METRIC TOKENS (Desktop)
+ * ==========================================================================
+ * 
+ * Component-specific metric tokens that reference primitive metrics.
+ * These tokens are consumed directly by components.
+ * 
+ * Token Hierarchy:
+ * Primitives → Component (this file)
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* ==========================================================================
+   * ICON (Base sizes used by other components)
+   * ========================================================================== */
+  
+  /* Size */
+  --size-icon-2xs: var(--padding-spacing-size-2);
+  --size-icon-xs: var(--padding-spacing-size-3);
+  --size-icon-sm: var(--padding-spacing-size-4);
+  --size-icon-md: var(--padding-spacing-size-5);
+  --size-icon-lg: var(--padding-spacing-size-6);
+  --size-icon-xl: var(--padding-spacing-size-8);
+  --size-icon-2xl: var(--padding-spacing-size-10);
+
+  /* ==========================================================================
+   * AVATAR
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-avatar-horizontal-between-sm: var(--padding-spacing-size-2);
+  --padding-avatar-horizontal-between-md: var(--padding-spacing-size-4);
+  --padding-avatar-horizontal-between-lg: var(--padding-spacing-size-6);
+  --padding-avatar-vertical-between-sm: var(--padding-spacing-size-2);
+  --padding-avatar-vertical-between-md: var(--padding-spacing-size-4);
+  --padding-avatar-vertical-between-lg: var(--padding-spacing-size-6);
+  
+  /* Size */
+  --size-avatar-height-sm: var(--padding-spacing-size-6);
+  --size-avatar-height-md: var(--padding-spacing-size-8);
+  --size-avatar-height-lg: var(--padding-spacing-size-12);
+  --size-avatar-height-xl: var(--padding-spacing-size-20);
+  --size-avatar-width-sm: var(--padding-spacing-size-6);
+  --size-avatar-width-md: var(--padding-spacing-size-8);
+  --size-avatar-width-lg: var(--padding-spacing-size-12);
+  --size-avatar-width-xl: var(--padding-spacing-size-20);
+  
+  /* Border Width */
+  --border-width-avatar-sm: var(--border-width-border);
+  --border-width-avatar-md: var(--border-width-border-2);
+  --border-width-avatar-lg: var(--border-width-border-4);
+  
+  /* Border Radius */
+  --border-radius-avatar-rounded: var(--border-radius-rounded);
+  --border-radius-avatar-rounded-full: var(--border-radius-rounded-full);
+  
+  /* Opacity */
+  --opacity-avatar-icon: var(--opacity-opacity-100);
+
+  /* ==========================================================================
+   * BADGE
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-badge-vertical-sm: var(--padding-spacing-size-0);
+  --padding-badge-vertical-md: var(--padding-spacing-size-0);
+  --padding-badge-horizontal-sm: var(--padding-spacing-size-1_5);
+  --padding-badge-horizontal-md: var(--padding-spacing-size-2);
+  --padding-badge-horizontal-between-sm: var(--padding-spacing-size-1);
+  --padding-badge-horizontal-between-md: var(--padding-spacing-size-1);
+  
+  /* Size */
+  --size-badge-height-sm: var(--padding-spacing-size-5);
+  --size-badge-height-md: var(--padding-spacing-size-6);
+  
+  /* Border Width */
+  --border-width-badge-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-badge-sm: var(--border-radius-rounded);
+  --border-radius-badge-md: var(--border-radius-rounded);
+
+  /* ==========================================================================
+   * BANNER
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-banner-vertical: var(--padding-spacing-size-0);
+  --padding-banner-horizontal: var(--padding-spacing-size-4);
+  --padding-banner-horizontal-between: var(--padding-spacing-size-4);
+  
+  /* Size */
+  --size-banner-height: var(--padding-spacing-size-14);
+  
+  /* Border Width */
+  --border-width-banner-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-banner-sm: var(--border-radius-rounded-sm);
+
+  /* ==========================================================================
+   * BREADCRUMBS
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-breadcrumbs-horizontal-between: var(--padding-spacing-size-2);
+  --padding-breadcrumb-item-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-breadcrumbs-height-sm: var(--padding-spacing-size-6);
+
+  /* ==========================================================================
+   * BUTTON
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-button-horizontal-none: var(--padding-spacing-size-0);
+  --padding-button-horizontal-sm: var(--padding-spacing-size-4);
+  --padding-button-horizontal-md: var(--padding-spacing-size-4);
+  --padding-button-horizontal-between-none: var(--padding-spacing-size-0);
+  --padding-button-horizontal-between-sm: var(--padding-spacing-size-1);
+  --padding-button-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-button-vertical-none: var(--padding-spacing-size-0);
+  --padding-button-vertical-sm: var(--padding-spacing-size-0);
+  --padding-button-vertical-md: var(--padding-spacing-size-0);
+  
+  /* Size */
+  --size-button-height-sm: var(--padding-spacing-size-8);
+  --size-button-height-md: var(--padding-spacing-size-12);
+  --size-button-icononly-sm: var(--padding-spacing-size-8);
+  --size-button-icononly-md: var(--padding-spacing-size-12);
+  --size-button-icon-sm: var(--size-icon-sm);
+  --size-button-icon-md: var(--size-icon-md);
+  
+  /* Border Width */
+  --border-width-button-primary: var(--border-width-border-0);
+  --border-width-button-secondary: var(--border-width-border);
+  --border-width-button-textonly: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-button-sm: var(--border-radius-rounded);
+  --border-radius-button-md: var(--border-radius-rounded-lg);
+  
+  /* Opacity */
+  --opacity-button-active: var(--opacity-opacity-100);
+  --opacity-button-disabled: var(--opacity-opacity-70);
+
+  /* ==========================================================================
+   * BUTTON GROUP
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-button-group-horizontal: var(--padding-spacing-size-0);
+  --padding-button-group-horizontal-between: var(--padding-spacing-size-0);
+  --padding-button-group-vertical-none: var(--padding-spacing-size-0);
+  --padding-button-group-vertical: var(--padding-spacing-size-0);
+  
+  /* Border Width */
+  --border-width-button-group-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-button-group-default: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * BUTTON GROUP ITEM
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-button-group-item-horizontal-none: var(--padding-spacing-size-0);
+  --padding-button-group-item-horizontal-sm: var(--padding-spacing-size-4);
+  --padding-button-group-item-horizontal-md: var(--padding-spacing-size-4);
+  --padding-button-group-item-horizontal-between-sm: var(--padding-spacing-size-1);
+  --padding-button-group-item-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-button-group-item-vertical-none: var(--padding-spacing-size-0);
+  --padding-button-group-item-vertical-sm: var(--padding-spacing-size-0);
+  --padding-button-group-item-vertical-md: var(--padding-spacing-size-0);
+  
+  /* Size */
+  --size-button-group-item-height-sm: var(--padding-spacing-size-8);
+  --size-button-group-item-height-md: var(--padding-spacing-size-12);
+  --size-button-group-item-icononly-sm: var(--padding-spacing-size-8);
+  --size-button-group-item-icononly-md: var(--padding-spacing-size-12);
+  
+  /* Border Width */
+  --border-width-button-group-item-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-button-group-item-sm: var(--border-radius-rounded-none);
+  --border-radius-button-group-item-md: var(--border-radius-rounded-none);
+
+  /* ==========================================================================
+   * CALENDAR
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-calendar-vertical: var(--padding-spacing-size-4);
+  --padding-calendar-horizontal: var(--padding-spacing-size-4);
+  --padding-calendar-horizontal-between: var(--padding-spacing-size-4);
+  --padding-calendar-vertical-between: var(--padding-spacing-size-2);
+  
+  /* Border Width */
+  --border-width-calendar-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-calendar-default: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * CALENDAR ITEM
+   * ========================================================================== */
+  
+  /* Size */
+  --size-calendar-item-height: var(--padding-spacing-size-9);
+  --size-calendar-item-width: var(--padding-spacing-size-9);
+  
+  /* Border Width */
+  --border-width-calendar-item-cell: var(--border-width-border-0);
+  --border-width-calendar-item-header: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-calendar-item-default: var(--border-radius-rounded);
+  --border-radius-calendar-item-none: var(--border-radius-rounded-none);
+
+  /* ==========================================================================
+   * CHECKBOX
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-checkbox-label-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-checkbox-height: var(--padding-spacing-size-4);
+  --size-checkbox-width: var(--padding-spacing-size-4);
+  
+  /* Border Width */
+  --border-width-checkbox-border-none: var(--border-width-border-0);
+  --border-width-checkbox-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-checkbox-default: var(--border-radius-rounded);
+
+  /* ==========================================================================
+   * CONTAINER
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-container-horizontal-sm: var(--padding-spacing-size-2);
+  --padding-container-horizontal-md: var(--padding-spacing-size-4);
+  --padding-container-horizontal-lg: var(--padding-spacing-size-6);
+  --padding-container-vertical-sm: var(--padding-spacing-size-2);
+  --padding-container-vertical-md: var(--padding-spacing-size-4);
+  --padding-container-vertical-lg: var(--padding-spacing-size-6);
+  --padding-container-horizontal-between-sm: var(--padding-spacing-size-2);
+  --padding-container-horizontal-between-md: var(--padding-spacing-size-4);
+  --padding-container-horizontal-between-lg: var(--padding-spacing-size-6);
+  --padding-container-vertical-between-sm: var(--padding-spacing-size-2);
+  --padding-container-vertical-between-md: var(--padding-spacing-size-4);
+  --padding-container-vertical-between-lg: var(--padding-spacing-size-6);
+  
+  /* Size */
+  --size-container-height-sm: var(--padding-spacing-size-4);
+  --size-container-height-md: var(--padding-spacing-size-8);
+  --size-container-height-lg: var(--padding-spacing-size-10);
+  --size-container-width-sm: var(--padding-spacing-size-4);
+  --size-container-width-md: var(--padding-spacing-size-8);
+  --size-container-width-lg: var(--padding-spacing-size-10);
+  
+  /* Border Width */
+  --border-width-container-sm: var(--border-width-border);
+  --border-width-container-md: var(--border-width-border-2);
+  --border-width-container-lg: var(--border-width-border-4);
+  
+  /* Border Radius */
+  --border-radius-container-rounded-none: var(--border-radius-rounded-lg);
+  --border-radius-container-rounded-sm: var(--border-radius-rounded-lg);
+  --border-radius-container-rounded-md: var(--border-radius-rounded-2xl);
+  --border-radius-container-rounded-lg: var(--border-radius-rounded-3xl);
+  --border-radius-container-rounded-full: var(--border-radius-rounded-full);
+
+  /* ==========================================================================
+   * FLAGS
+   * ========================================================================== */
+  
+  /* Size */
+  --size-flags-height-sm: var(--padding-spacing-size-5);
+  --size-flags-width-sm: var(--padding-spacing-size-7);
+
+  /* ==========================================================================
+   * INPUT
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-input-horizontal-sm: var(--padding-spacing-size-2);
+  --padding-input-horizontal-between-sm: var(--padding-spacing-size-2);
+  --padding-input-horizontal-md: var(--padding-spacing-size-4);
+  --padding-input-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-input-vertical-sm: var(--padding-spacing-size-0);
+  --padding-input-vertical-md: var(--padding-spacing-size-0);
+  --padding-input-textarea-top: var(--padding-spacing-size-4);
+  --padding-input-textarea-bottom: var(--padding-spacing-size-2);
+  --padding-input-textarea-horizontal: var(--padding-spacing-size-4);
+  --padding-input-textarea-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-input-height-2xs: var(--padding-spacing-size-2);
+  --size-input-height-xs: var(--padding-spacing-size-4);
+  --size-input-height-sm: var(--padding-spacing-size-8);
+  --size-input-height-md: var(--padding-spacing-size-12);
+  --size-input-height-xl: var(--padding-spacing-size-91);
+  --size-input-width-2xl: var(--padding-spacing-size-91);
+  
+  /* Border Width */
+  --border-width-input-selected: var(--border-width-border-0);
+  --border-width-input-sm: var(--border-width-border);
+  --border-width-input-md: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-input-xs: var(--border-radius-rounded);
+  --border-radius-input-md: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * INTERACTIVE ICON
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-interactive-icon-vertical: var(--padding-spacing-size-1);
+  --padding-interactive-icon-horizontal: var(--padding-spacing-size-1);
+  
+  /* Border Width */
+  --border-width-interactive-icon-default: var(--border-width-border-0);
+  --border-width-interactive-icon-hover: var(--border-width-border-0);
+  --border-width-interactive-icon-selected: var(--border-width-border-0);
+  --border-width-interactive-icon-disabled: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-interactive-icon-default: var(--border-radius-rounded);
+  
+  /* Opacity */
+  --opacity-interactive-icon-hover: var(--opacity-opacity-100);
+  --opacity-interactive-icon-active: var(--opacity-opacity-100);
+
+  /* ==========================================================================
+   * MENU
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-menu-vertical: var(--padding-spacing-size-2);
+  --padding-menu-horizontal: var(--padding-spacing-size-2);
+  --padding-menu-vertical-between: var(--padding-spacing-size-2);
+  
+  /* Border Width */
+  --border-width-menu-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-menu-default: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * MENU ITEM
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-menu-item-horizontal: var(--padding-spacing-size-2);
+  --padding-menu-item-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-menu-item-height: var(--padding-spacing-size-10);
+  
+  /* Border Radius */
+  --border-radius-menu-item-default: var(--border-radius-rounded);
+
+  /* ==========================================================================
+   * MODAL
+   * ========================================================================== */
+  
+  /* Padding - Header */
+  --padding-modal-header-horizontal: var(--padding-spacing-size-6);
+  --padding-modal-header-vertical: var(--padding-spacing-size-6);
+  --padding-modal-header-vertical-between: var(--padding-spacing-size-1);
+  
+  /* Padding - Footer */
+  --padding-modal-footer-horizontal: var(--padding-spacing-size-6);
+  --padding-modal-footer-horizontal-between: var(--padding-spacing-size-4);
+  --padding-modal-footer-vertical: var(--padding-spacing-size-6);
+  --padding-modal-footer-vertical-between: var(--padding-spacing-size-6);
+  
+  /* Border Width */
+  --border-width-modal-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-modal-default: var(--border-radius-rounded-2xl);
+
+  /* ==========================================================================
+   * POPOVER
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-popover-vertical: var(--padding-spacing-size-4);
+  --padding-popover-horizontal: var(--padding-spacing-size-4);
+  --padding-popover-horizontal-between: var(--padding-spacing-size-4);
+  --padding-popover-vertical-between: var(--padding-spacing-size-2);
+  
+  /* Border Width */
+  --border-width-popover-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-popover-default: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * RADIO
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-radio-label-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-radio-height: var(--padding-spacing-size-4);
+  --size-radio-width: var(--padding-spacing-size-4);
+  
+  /* Border Width */
+  --border-width-radio-border-none: var(--border-width-border-0);
+  --border-width-radio-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-radio-rounded-full: var(--border-radius-rounded-full);
+
+  /* ==========================================================================
+   * SIDEBAR
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-sidebar-horizontal-sm: var(--padding-spacing-size-1_5);
+  --padding-sidebar-horizontal-md: var(--padding-spacing-size-2);
+  --padding-sidebar-horizontal-lg: var(--padding-spacing-size-4);
+  --padding-sidebar-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-sidebar-horizontal-between-lg: var(--padding-spacing-size-4);
+  --padding-sidebar-horizontal-between-xl: var(--padding-spacing-size-6);
+  --padding-sidebar-vertical-sm: var(--padding-spacing-size-1_5);
+  --padding-sidebar-vertical-md: var(--padding-spacing-size-2);
+  --padding-sidebar-vertical-lg: var(--padding-spacing-size-4);
+  --padding-sidebar-vertical-xl: var(--padding-spacing-size-6);
+  --padding-sidebar-vertical-between-md: var(--padding-spacing-size-2);
+  --padding-sidebar-vertical-between-lg: var(--padding-spacing-size-4);
+  --padding-sidebar-vertical-between-xl: var(--padding-spacing-size-6);
+  
+  /* Size */
+  --size-sidebar-height: var(--padding-spacing-size-10);
+  --size-sidebar-width: var(--padding-spacing-size-10);
+  
+  /* Border Width */
+  --border-width-sidebar-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-sidebar-rounded-lg: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * SPINNER
+   * ========================================================================== */
+  
+  /* Size */
+  --size-spinner-height-sm: var(--padding-spacing-size-5);
+  --size-spinner-width-sm: var(--padding-spacing-size-5);
+  --size-spinner-height-md: var(--padding-spacing-size-8);
+  --size-spinner-width-md: var(--padding-spacing-size-8);
+  --size-spinner-height-lg: var(--padding-spacing-size-12);
+  --size-spinner-width-lg: var(--padding-spacing-size-12);
+
+  /* ==========================================================================
+   * STATS
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-stats-vertical: var(--padding-spacing-size-4);
+  --padding-stats-horizontal: var(--padding-spacing-size-4);
+  --padding-stats-vertical-between: var(--padding-spacing-size-4);
+  --padding-stats-horizontal-between: var(--padding-spacing-size-4);
+  
+  /* Size */
+  --size-stats-height: var(--padding-spacing-size-60);
+  --size-stats-icon-height: var(--padding-spacing-size-12);
+  --size-stats-icon-width: var(--padding-spacing-size-12);
+  
+  /* Border Width */
+  --border-width-stats-default: var(--border-width-border);
+  --border-width-stats-icon-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-stats-default: var(--border-radius-rounded-lg);
+  --border-radius-stats-icon-default: var(--border-radius-rounded-full);
+
+  /* ==========================================================================
+   * STEPS
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-steps-horizontal-between: var(--padding-spacing-size-2);
+  --padding-steps-vertical-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-steps-divider-height: var(--padding-spacing-size-px);
+  --size-steps-divider-width: var(--padding-spacing-size-px);
+
+  /* ==========================================================================
+   * STEP ITEM
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-step-item-horizontal-between: var(--padding-spacing-size-2);
+  --padding-step-item-vertical-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-step-item-height: var(--padding-spacing-size-6);
+  --size-step-item-width: var(--padding-spacing-size-6);
+  
+  /* Border Width */
+  --border-width-step-item-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-step-item-default: var(--border-radius-rounded-full);
+
+  /* ==========================================================================
+   * SUB MENU
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-sub-menu-horizontal-lg: var(--padding-spacing-size-4);
+  --padding-sub-menu-vertical-lg: var(--padding-spacing-size-4);
+  
+  /* Border Width */
+  --border-width-sub-menu-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-sub-menu-rounded-lg: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * TABLE
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-table-horizontal: var(--padding-spacing-size-4);
+  --padding-table-horizontal-between-sm: var(--padding-spacing-size-2);
+  --padding-table-horizontal-between-lg: var(--padding-spacing-size-4);
+  
+  /* Size */
+  --size-table-height-md: var(--padding-spacing-size-12);
+  --size-table-height-lg: var(--padding-spacing-size-16);
+  --size-table-width: var(--padding-spacing-size-12);
+  
+  /* Border Width */
+  --border-width-table-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-table-default: var(--border-radius-rounded-2xl);
+
+  /* ==========================================================================
+   * TABS
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-tabs-horizontal: var(--padding-spacing-size-0);
+  --padding-tabs-vertical: var(--padding-spacing-size-0);
+  --padding-tabs-horizontal-between: var(--padding-spacing-size-4);
+  
+  /* Size */
+  --size-tabs-height: var(--padding-spacing-size-12);
+  
+  /* Border Width */
+  --border-width-tabs-sm: var(--border-width-border);
+  --border-width-tabs-md: var(--border-width-border-2);
+  
+  /* Border Radius */
+  --border-radius-tabs-default: var(--border-radius-rounded-none);
+
+  /* ==========================================================================
+   * TAB ITEM
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-tab-item-horizontal: var(--padding-spacing-size-4);
+  --padding-tab-item-vertical: var(--padding-spacing-size-0);
+  --padding-tab-item-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Border Radius */
+  --border-radius-tab-item-default: var(--border-radius-rounded-none);
+
+  /* ==========================================================================
+   * TAG
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-tag-horizontal: var(--padding-spacing-size-1_5);
+  --padding-tag-vertical: var(--padding-spacing-size-0);
+  --padding-tag-horizontal-between: var(--padding-spacing-size-1);
+  
+  /* Size */
+  --size-tag-height-sm: var(--padding-spacing-size-5);
+  --size-tag-height-md: var(--padding-spacing-size-6);
+  
+  /* Border Width */
+  --border-width-tag-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-tag-sm: var(--border-radius-rounded);
+  --border-radius-tag-md: var(--border-radius-rounded);
+
+  /* ==========================================================================
+   * TOAST
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-toast-horizontal: var(--padding-spacing-size-4);
+  --padding-toast-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-toast-horizontal-between-lg: var(--padding-spacing-size-4);
+  --padding-toast-vertical: var(--padding-spacing-size-4);
+  --padding-toast-vertical-between-sm: var(--padding-spacing-size-1);
+  --padding-toast-vertical-between-md: var(--padding-spacing-size-2);
+  
+  /* Border Width */
+  --border-width-toast-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-toast-rounded-2xl: var(--border-radius-rounded-2xl);
+
+  /* ==========================================================================
+   * TOGGLE
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-toggle-horizontal: var(--padding-spacing-size-0_5);
+  --padding-toggle-label-horizontal-between: var(--padding-spacing-size-2);
+  
+  /* Size */
+  --size-toggle-width: var(--padding-spacing-size-12);
+  --size-toggle-height: var(--padding-spacing-size-6);
+  
+  /* Border Width */
+  --border-width-toggle-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-toggle-default: var(--border-radius-rounded-full);
+
+  /* ==========================================================================
+   * TOOLTIP
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-tooltip-vertical: var(--padding-spacing-size-1);
+  --padding-tooltip-horizontal: var(--padding-spacing-size-3);
+  
+  /* Size */
+  --size-tooltip-height-sm: var(--padding-spacing-size-2);
+  --size-tooltip-height-lg: var(--padding-spacing-size-8);
+  --size-tooltip-width: var(--padding-spacing-size-8);
+  
+  /* Border Width */
+  --border-width-tooltip-default: var(--border-width-border-0);
+  
+  /* Border Radius */
+  --border-radius-tooltip-default: var(--border-radius-rounded);
+
+  /* ==========================================================================
+   * UPLOAD
+   * ========================================================================== */
+  
+  /* Padding */
+  --padding-upload-file-horizontal: var(--padding-spacing-size-4);
+  --padding-upload-file-vertical: var(--padding-spacing-size-4);
+  --padding-upload-file-vertical-between: var(--padding-spacing-size-2);
+  --padding-upload-area-horizontal: var(--padding-spacing-size-4);
+  --padding-upload-area-vertical: var(--padding-spacing-size-8);
+  --padding-upload-area-between: var(--padding-spacing-size-4);
+  --padding-upload-horizontal-xl: var(--padding-spacing-size-8);
+  --padding-upload-horizontal-between-md: var(--padding-spacing-size-2);
+  --padding-upload-horizontal-between-lg: var(--padding-spacing-size-4);
+  --padding-upload-vertical-between-md: var(--padding-spacing-size-2);
+  
+  /* Border Width */
+  --border-width-upload-default: var(--border-width-border);
+  
+  /* Border Radius */
+  --border-radius-upload-default: var(--border-radius-rounded-lg);
+
+  /* ==========================================================================
+   * OPACITY (Global visibility levels)
+   * ========================================================================== */
+  --opacity-visibility-none: var(--opacity-opacity-0);
+  --opacity-visibility-lowest: var(--opacity-opacity-15);
+  --opacity-visibility-low: var(--opacity-opacity-25);
+  --opacity-visibility-medium: var(--opacity-opacity-50);
+  --opacity-visibility-high: var(--opacity-opacity-75);
+  --opacity-visibility-highest: var(--opacity-opacity-85);
+  --opacity-visibility-full: var(--opacity-opacity-100);
+}

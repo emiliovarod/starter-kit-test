@@ -1,0 +1,29 @@
+---
+description: This is a new rule
+alwaysApply: false
+---
+# Design System Architecture
+
+## Token hierarchy
+Primitives → Semantic → Component
+
+Rules:
+- Primitives define raw values only
+- Semantic tokens map meaning to primitives
+- Component tokens consume semantic tokens
+- Components NEVER use primitives or semantic tokens directly
+- No hardcoded values in components
+
+## CSS rules
+- One component = one CSS file
+- Components do not style other components
+- Layout is allowed, visual styling is not
+- No global selectors in component CSS
+
+## HTML rules
+- HTML expresses intention, not design
+- Use data-attributes for variants
+- No utility classes in markup
+
+## Theming
+- Themes override semantic tokens only

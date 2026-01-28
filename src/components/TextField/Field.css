@@ -1,0 +1,83 @@
+/**
+ * ==========================================================================
+ * FIELD COMPONENT STYLES
+ * ==========================================================================
+ *
+ * Wrapper component styles for form fields.
+ * Handles label, help text, error text, and success text.
+ *
+ * Typography references:
+ * - Label: font-label-sm (family: body, size: sm, weight: medium, line-height: 1.4)
+ * - Caption: font-caption (family: body, size: sm, weight: normal, line-height: 1.6)
+ *
+ * ==========================================================================
+ */
+
+/* ==========================================================================
+ * BASE STYLES
+ * ========================================================================== */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ==========================================================================
+ * LABEL STYLES (font-label-sm)
+ * ========================================================================== */
+
+.field-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-transform: none;
+  text-decoration: none;
+  color: var(--text-input-label);
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+ * CAPTION TEXT STYLES (font-caption)
+ * Help, Error, Success
+ * ========================================================================== */
+
+.field-help-text,
+.field-error-text,
+.field-success-text {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-transform: none;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.field-help-text {
+  color: var(--text-input-caption);
+}
+
+.field-error-text {
+  color: var(--text-input-caption-error);
+}
+
+.field-success-text {
+  color: var(--text-input-caption-success);
+}
+
+/* ==========================================================================
+ * DISABLED STATE
+ * ========================================================================== */
+
+.field[data-disabled="true"] .field-label {
+  color: var(--text-input-disabled);
+}
+
+.field[data-disabled="true"] .field-help-text {
+  color: var(--text-input-disabled);
+}

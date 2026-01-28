@@ -1,0 +1,208 @@
+/**
+ * ==========================================================================
+ * PRIMITIVE COLOR TOKENS
+ * ==========================================================================
+ * 
+ * Raw color values only. No semantic meaning.
+ * These tokens should NEVER be used directly in components.
+ * 
+ * Usage: Semantic tokens reference these primitives.
+ * Naming: --color-{hue}-{shade}
+ * Scale: 50 (lightest) → 950 (darkest)
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* --------------------------------------------------------------------------
+   * BLUE
+   * -------------------------------------------------------------------------- */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bedaff;
+  --color-blue-300: #92c4fe;
+  --color-blue-400: #5fa3fb;
+  --color-blue-500: #3f83f8;
+  --color-blue-600: #2360ed;
+  --color-blue-700: #1b4bda;
+  --color-blue-800: #1d3db0;
+  --color-blue-900: #1d398b;
+  --color-blue-950: #162455;
+
+  /* --------------------------------------------------------------------------
+   * GREEN
+   * -------------------------------------------------------------------------- */
+  --color-green-50: #edfcf5;
+  --color-green-100: #d3f8e4;
+  --color-green-200: #abefce;
+  --color-green-300: #74e1b3;
+  --color-green-400: #3ccb93;
+  --color-green-500: #19b07a;
+  --color-green-600: #0e9f6e;
+  --color-green-700: #0a7251;
+  --color-green-800: #0b5a42;
+  --color-green-900: #0a4a37;
+  --color-green-950: #042a20;
+
+  /* --------------------------------------------------------------------------
+   * GRAY PALE (Neutral with cool undertone)
+   * -------------------------------------------------------------------------- */
+  --color-gray-pale-50: #f7f8f8;
+  --color-gray-pale-100: #edeef1;
+  --color-gray-pale-200: #d8dbdf;
+  --color-gray-pale-300: #b6bac3;
+  --color-gray-pale-400: #8e95a2;
+  --color-gray-pale-500: #6b7280;
+  --color-gray-pale-600: #5b616e;
+  --color-gray-pale-700: #4a4e5a;
+  --color-gray-pale-800: #40444c;
+  --color-gray-pale-900: #383a42;
+  --color-gray-pale-950: #25272c;
+
+  /* Gray Pale Alpha Variants */
+  --color-gray-pale-950-alpha-88: #25272ce0;
+  --color-gray-pale-950-alpha-38: #25272c61;
+  --color-gray-pale-950-alpha-6: #25272c0f;
+  --color-gray-pale-950-alpha-0: #25272c00;
+
+  /* --------------------------------------------------------------------------
+   * GRAY SLATE (Neutral with blue undertone)
+   * -------------------------------------------------------------------------- */
+  --color-gray-slate-50: #f6f7f9;
+  --color-gray-slate-100: #eceef2;
+  --color-gray-slate-200: #d5d9e2;
+  --color-gray-slate-300: #b1bbc8;
+  --color-gray-slate-400: #8695aa;
+  --color-gray-slate-500: #64748b;
+  --color-gray-slate-600: #526077;
+  --color-gray-slate-700: #434e61;
+  --color-gray-slate-800: #3a4252;
+  --color-gray-slate-900: #343a46;
+  --color-gray-slate-950: #23272e;
+
+  /* --------------------------------------------------------------------------
+   * GRAY STONE (Neutral with warm undertone)
+   * -------------------------------------------------------------------------- */
+  --color-gray-stone-50: #f4f3f2;
+  --color-gray-stone-100: #e2e1df;
+  --color-gray-stone-200: #c7c4c1;
+  --color-gray-stone-300: #a7a29d;
+  --color-gray-stone-400: #8e8781;
+  --color-gray-stone-500: #78716c;
+  --color-gray-stone-600: #6d6561;
+  --color-gray-stone-700: #585250;
+  --color-gray-stone-800: #4d4846;
+  --color-gray-stone-900: #443f3f;
+  --color-gray-stone-950: #262322;
+
+  /* --------------------------------------------------------------------------
+   * RED
+   * -------------------------------------------------------------------------- */
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-200: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #f05252;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+  --color-red-900: #7f1d1d;
+  --color-red-950: #450a0a;
+
+  /* --------------------------------------------------------------------------
+   * ORANGE
+   * -------------------------------------------------------------------------- */
+  --color-orange-50: #fff4ed;
+  --color-orange-100: #ffe7d4;
+  --color-orange-200: #ffcaa8;
+  --color-orange-300: #ffa570;
+  --color-orange-400: #ff7437;
+  --color-orange-500: #ff5a1f;
+  --color-orange-600: #f03406;
+  --color-orange-700: #c72307;
+  --color-orange-800: #9e1d0e;
+  --color-orange-900: #7f1c0f;
+  --color-orange-950: #450a05;
+
+  /* --------------------------------------------------------------------------
+   * YELLOW
+   * -------------------------------------------------------------------------- */
+  --color-yellow-50: #ffffea;
+  --color-yellow-100: #fffec5;
+  --color-yellow-200: #fffe86;
+  --color-yellow-300: #fff747;
+  --color-yellow-400: #ffeb1c;
+  --color-yellow-500: #fdcd03;
+  --color-yellow-600: #e1a000;
+  --color-yellow-700: #c27803;
+  --color-yellow-800: #975909;
+  --color-yellow-900: #7c480b;
+  --color-yellow-950: #472601;
+
+  /* --------------------------------------------------------------------------
+   * TEAL
+   * -------------------------------------------------------------------------- */
+  --color-teal-50: #ebfffc;
+  --color-teal-100: #ccfffb;
+  --color-teal-200: #9ffffb;
+  --color-teal-300: #5efffb;
+  --color-teal-400: #15fafb;
+  --color-teal-500: #00dbe1;
+  --color-teal-600: #00b0bd;
+  --color-teal-700: #0694a2;
+  --color-teal-800: #0f6f7b;
+  --color-teal-900: #115b68;
+  --color-teal-950: #043e48;
+
+  /* --------------------------------------------------------------------------
+   * INDIGO
+   * -------------------------------------------------------------------------- */
+  --color-indigo-50: #eef3ff;
+  --color-indigo-100: #dfe9ff;
+  --color-indigo-200: #c6d5ff;
+  --color-indigo-300: #a3b9fe;
+  --color-indigo-400: #7e93fb;
+  --color-indigo-500: #6875f5;
+  --color-indigo-600: #4244e9;
+  --color-indigo-700: #3534ce;
+  --color-indigo-800: #2d2ea6;
+  --color-indigo-900: #2c2f83;
+  --color-indigo-950: #1a1b4c;
+
+  /* --------------------------------------------------------------------------
+   * PURPLE
+   * -------------------------------------------------------------------------- */
+  --color-purple-50: #f5f3ff;
+  --color-purple-100: #ede9fe;
+  --color-purple-200: #ddd5ff;
+  --color-purple-300: #c3b4fe;
+  --color-purple-400: #a689fc;
+  --color-purple-500: #9061f9;
+  --color-purple-600: #7c37f0;
+  --color-purple-700: #6d25dc;
+  --color-purple-800: #5b1eb9;
+  --color-purple-900: #4c1b97;
+  --color-purple-950: #2e0f66;
+
+  /* --------------------------------------------------------------------------
+   * PINK
+   * -------------------------------------------------------------------------- */
+  --color-pink-50: #fdf2f8;
+  --color-pink-100: #fbe8f3;
+  --color-pink-200: #fad0e8;
+  --color-pink-300: #f7aad3;
+  --color-pink-400: #f175b5;
+  --color-pink-500: #e74694;
+  --color-pink-600: #d62c76;
+  --color-pink-700: #ba1c5d;
+  --color-pink-800: #9a1a4d;
+  --color-pink-900: #801b43;
+  --color-pink-950: #4e0923;
+
+  /* --------------------------------------------------------------------------
+   * SOLID (Absolute values)
+   * -------------------------------------------------------------------------- */
+  --color-solid-black: #000000;
+  --color-solid-white: #ffffff;
+}

@@ -1,0 +1,776 @@
+/**
+ * ==========================================================================
+ * COMPONENT COLOR TOKENS (Light Theme)
+ * ==========================================================================
+ * 
+ * Component-specific color tokens that reference semantic tokens.
+ * These tokens are consumed directly by components.
+ * 
+ * Token Hierarchy:
+ * Primitives → Semantic → Component (this file)
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* ==========================================================================
+   * AVATAR
+   * ========================================================================== */
+  
+  /* Background */
+  --background-avatar-default: var(--brand-primary-lit-high);
+  --background-avatar-notification: var(--system-success-main);
+  
+  /* Border */
+  --border-avatar-notification: var(--background-container-flat);
+  
+  /* Text */
+  --text-avatar-header: var(--text-global-body);
+  --text-avatar-initials: var(--text-global-contrast);
+  --text-avatar-description: var(--text-global-caption);
+  
+  /* Icon */
+  --icon-avatar-default: var(--icon-global-contrast);
+
+  /* ==========================================================================
+   * BADGE
+   * ========================================================================== */
+  
+  /* Background */
+  --background-badge-information: var(--background-container-raised-high);
+  --background-badge-success: var(--system-success-lit-high);
+  --background-badge-warning: var(--system-warning-lit-high);
+  --background-badge-error: var(--system-error-lit-high);
+  --background-badge-neutral: var(--background-container-sunken);
+  
+  /* Border */
+  --border-badge-information: var(--background-container-raised-high);
+  --border-badge-success: var(--system-success-lit);
+  --border-badge-warning: var(--system-warning-main);
+  --border-badge-error: var(--system-error-lit-high);
+  --border-badge-neutral: var(--background-container-sunken-lowest);
+  
+  /* Text */
+  --text-badge-default: var(--text-global-primary-dim);
+  --text-badge-success: var(--text-global-success-dim);
+  --text-badge-warning: var(--text-global-warning);
+  --text-badge-error: var(--text-global-error-dim);
+  --text-badge-secondary: var(--text-global-header);
+  
+  /* Icon */
+  --icon-badge-primary: var(--icon-global-primary);
+  --icon-badge-success: var(--system-success-dim);
+  --icon-badge-warning: var(--system-warning-dim);
+  --icon-badge-error: var(--icon-global-error);
+  --icon-badge-secondary: var(--text-global-header);
+
+  /* ==========================================================================
+   * BANNER
+   * ========================================================================== */
+  
+  /* Background */
+  --background-banner-info: var(--background-container-information-dim);
+  --background-banner-warning: var(--background-container-warning-dim);
+  --background-banner-alert: var(--background-container-error-dim);
+  --background-banner-success: var(--background-container-success-dim);
+  
+  /* Border */
+  --border-banner-information: var(--background-container-information-dim);
+  --border-banner-warning: var(--system-warning-main);
+  --border-banner-error: var(--system-error-main);
+  --border-banner-success: var(--system-success-main);
+  
+  /* Text */
+  --text-banner-info-text: var(--text-global-contrast);
+  --text-banner-info-link: var(--text-global-contrast);
+  --text-banner-warning-text: var(--text-global-warning);
+  --text-banner-warning-link: var(--text-global-warning);
+  --text-banner-alert-text: var(--text-global-contrast);
+  --text-banner-alert-link: var(--text-global-contrast);
+  --text-banner-success-text: var(--text-global-contrast);
+  --text-banner-success-link: var(--text-global-contrast);
+  
+  /* Icon */
+  --icon-banner-info: var(--icon-global-contrast);
+  --icon-banner-warning: var(--icon-global-warning);
+  --icon-banner-alert: var(--icon-global-contrast);
+  --icon-banner-success: var(--icon-global-contrast);
+
+  /* ==========================================================================
+   * BREADCRUMBS
+   * ========================================================================== */
+  
+  /* Text */
+  --text-breadcrumbs-link: var(--text-global-placeholder);
+  --text-breadcrumbs-hover: var(--text-global-link-hover);
+  --text-breadcrumbs-current: var(--text-global-body);
+  
+  /* Icon */
+  --icon-breadcrumbs-link: var(--icon-global-placeholder);
+  --icon-breadcrumbs-hover: var(--icon-global-link-hover);
+  --icon-breadcrumbs-current: var(--icon-global-normal);
+
+  /* ==========================================================================
+   * BUTTON
+   * ========================================================================== */
+  
+  /* Background - Primary */
+  --background-button-primary-default: var(--brand-primary-main);
+  --background-button-primary-disabled: var(--background-container-disabled);
+  --background-button-primary-hover: var(--brand-primary-lit);
+  --background-button-primary-pressed: var(--brand-primary-dim-low);
+  
+  /* Background - Primary Alert */
+  --background-button-primary-alert-default: var(--system-error-main);
+  --background-button-primary-alert-disabled: var(--background-container-disabled);
+  --background-button-primary-alert-hover: var(--system-error-lit);
+  --background-button-primary-alert-pressed: var(--system-error-dim);
+  
+  /* Background - Secondary */
+  --background-button-secondary-default: var(--background-container-opacity-0);
+  --background-button-secondary-disabled: var(--background-container-opacity-0);
+  --background-button-secondary-hover: var(--background-container-opacity-0);
+  --background-button-secondary-pressed: var(--background-container-opacity-0);
+  
+  /* Background - Secondary Alert */
+  --background-button-secondary-alert-default: var(--background-container-opacity-0);
+  --background-button-secondary-alert-disabled: var(--background-container-opacity-0);
+  --background-button-secondary-alert-hover: var(--background-container-opacity-0);
+  --background-button-secondary-alert-pressed: var(--background-container-opacity-0);
+  
+  /* Background - Text Only */
+  --background-button-textonly-default: var(--background-container-opacity-0);
+  --background-button-textonly-disabled: var(--background-container-opacity-0);
+  --background-button-textonly-hover: var(--background-container-opacity-0);
+  --background-button-textonly-pressed: var(--background-container-opacity-0);
+  
+  /* Background - Text Only Alert */
+  --background-button-textonly-alert-default: var(--background-container-opacity-0);
+  --background-button-textonly-alert-disabled: var(--background-container-opacity-0);
+  --background-button-textonly-alert-hover: var(--background-container-opacity-0);
+  --background-button-textonly-alert-pressed: var(--background-container-opacity-0);
+  
+  /* Border - Primary */
+  --border-button-primary-default: var(--brand-primary-main);
+  --border-button-primary-disabled: var(--background-container-disabled);
+  --border-button-primary-hover: var(--brand-primary-lit);
+  --border-button-primary-pressed: var(--brand-primary-dim-low);
+  
+  /* Border - Primary Alert */
+  --border-button-primary-alert-default: var(--system-error-main);
+  --border-button-primary-alert-disabled: var(--background-container-disabled);
+  --border-button-primary-alert-hover: var(--system-error-lit);
+  --border-button-primary-alert-pressed: var(--system-error-dim-low);
+  
+  /* Border - Secondary */
+  --border-button-secondary-default: var(--brand-primary-main);
+  --border-button-secondary-disabled: var(--border-container-disabled);
+  --border-button-secondary-hover: var(--brand-primary-lit);
+  --border-button-secondary-pressed: var(--brand-primary-dim-low);
+  
+  /* Border - Secondary Alert */
+  --border-button-secondary-alert-default: var(--system-error-main);
+  --border-button-secondary-alert-disabled: var(--background-container-disabled);
+  --border-button-secondary-alert-hover: var(--system-error-lit);
+  --border-button-secondary-alert-pressed: var(--system-error-dim-low);
+  
+  /* Border - Text Only */
+  --border-button-textonly-default: var(--brand-primary-main);
+  --border-button-textonly-disabled: var(--border-container-disabled);
+  --border-button-textonly-hover: var(--brand-primary-lit);
+  --border-button-textonly-pressed: var(--brand-primary-dim-low);
+  
+  /* Border - Text Only Alert */
+  --border-button-textonly-alert-default: var(--system-error-main);
+  --border-button-textonly-alert-disabled: var(--background-container-disabled);
+  --border-button-textonly-alert-hover: var(--system-error-lit);
+  --border-button-textonly-alert-pressed: var(--system-error-dim-low);
+  
+  /* Text - Primary */
+  --text-button-primary-default: var(--text-global-contrast);
+  --text-button-primary-disabled: var(--text-global-disabled);
+  --text-button-primary-hover: var(--text-global-contrast);
+  --text-button-primary-pressed: var(--text-global-contrast);
+  --text-button-primary-loading: var(--text-global-contrast);
+  
+  /* Text - Primary Alert */
+  --text-button-primary-alert-default: var(--text-global-contrast);
+  --text-button-primary-alert-disabled: var(--text-global-disabled);
+  --text-button-primary-alert-hover: var(--text-global-contrast);
+  --text-button-primary-alert-pressed: var(--text-global-contrast);
+  --text-button-primary-alert-loading: var(--text-global-contrast);
+  
+  /* Text - Secondary */
+  --text-button-secondary-default: var(--brand-primary-main);
+  --text-button-secondary-disabled: var(--text-global-disabled);
+  --text-button-secondary-hover: var(--brand-primary-lit);
+  --text-button-secondary-pressed: var(--brand-primary-dim-low);
+  
+  /* Text - Secondary Alert */
+  --text-button-secondary-alert-default: var(--system-error-main);
+  --text-button-secondary-alert-disabled: var(--text-global-disabled);
+  --text-button-secondary-alert-hover: var(--system-error-lit-high);
+  --text-button-secondary-alert-pressed: var(--system-error-dim-low);
+  
+  /* Text - Text Only */
+  --text-button-textonly-default: var(--brand-primary-main);
+  --text-button-textonly-disabled: var(--text-global-disabled);
+  --text-button-textonly-hover: var(--brand-primary-lit);
+  --text-button-textonly-pressed: var(--brand-primary-dim-low);
+  
+  /* Text - Text Only Alert */
+  --text-button-textonly-alert-default: var(--system-error-main);
+  --text-button-textonly-alert-disabled: var(--text-global-disabled);
+  --text-button-textonly-alert-hover: var(--system-error-lit);
+  --text-button-textonly-alert-pressed: var(--system-error-dim-low);
+  
+  /* Icon - Primary */
+  --icon-button-primary-default: var(--icon-global-contrast);
+  --icon-button-primary-disabled: var(--icon-global-disabled);
+  --icon-button-primary-hover: var(--icon-global-contrast);
+  --icon-button-primary-pressed: var(--icon-global-contrast);
+  
+  /* Icon - Primary Alert */
+  --icon-button-primary-alert-default: var(--icon-global-contrast);
+  --icon-button-primary-alert-disabled: var(--icon-global-disabled);
+  --icon-button-primary-alert-hover: var(--icon-global-contrast);
+  --icon-button-primary-alert-pressed: var(--icon-global-contrast);
+  
+  /* Icon - Secondary */
+  --icon-button-secondary-default: var(--brand-primary-main);
+  --icon-button-secondary-disabled: var(--icon-global-disabled);
+  --icon-button-secondary-hover: var(--brand-primary-lit);
+  --icon-button-secondary-pressed: var(--brand-primary-dim-low);
+  
+  /* Icon - Secondary Alert */
+  --icon-button-secondary-alert-default: var(--system-error-main);
+  --icon-button-secondary-alert-disabled: var(--icon-global-disabled);
+  --icon-button-secondary-alert-hover: var(--system-error-lit);
+  --icon-button-secondary-alert-pressed: var(--system-error-dim-low);
+  
+  /* Icon - Text Only */
+  --icon-button-textonly-default: var(--brand-primary-main);
+  --icon-button-textonly-disabled: var(--icon-global-disabled);
+  --icon-button-textonly-hover: var(--brand-primary-lit);
+  --icon-button-textonly-pressed: var(--brand-primary-dim-low);
+  
+  /* Icon - Text Only Alert */
+  --icon-button-textonly-alert-default: var(--system-error-main);
+  --icon-button-textonly-alert-disabled: var(--icon-global-disabled);
+  --icon-button-textonly-alert-hover: var(--system-error-lit);
+  --icon-button-textonly-alert-pressed: var(--system-error-dim-low);
+
+  /* ==========================================================================
+   * BUTTON GROUP
+   * ========================================================================== */
+  
+  /* Background */
+  --background-button-group-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-button-group-default: var(--border-container-weak);
+  
+  /* Text */
+  --text-button-group-default: var(--text-global-placeholder);
+  --text-button-group-hover: var(--text-global-contrast);
+  --text-button-group-pressed: var(--text-global-contrast);
+  --text-button-group-active: var(--text-global-contrast);
+  --text-button-group-disabled: var(--text-global-disabled);
+  
+  /* Icon */
+  --icon-button-group-default: var(--icon-global-placeholder);
+  --icon-button-group-hover: var(--icon-global-contrast);
+  --icon-button-group-pressed: var(--icon-global-contrast);
+  --icon-button-group-active: var(--icon-global-contrast);
+  --icon-button-group-disabled: var(--icon-global-disabled);
+
+  /* ==========================================================================
+   * BUTTON GROUP ITEM
+   * ========================================================================== */
+  
+  /* Background */
+  --background-button-group-item-default: var(--background-container-flat);
+  --background-button-group-item-hover: var(--brand-primary-lit);
+  --background-button-group-item-active: var(--brand-primary-main);
+  --background-button-group-item-pressed: var(--brand-primary-dim-low);
+  --background-button-group-item-disabled: var(--background-container-disabled);
+  
+  /* Border */
+  --border-button-group-item-default: var(--border-container-weak);
+  --border-button-group-item-hover: var(--border-container-hover);
+  --border-button-group-item-active: var(--border-container-selected);
+  --border-button-group-item-pressed: var(--brand-primary-dim-low);
+  --border-button-group-item-disabled: var(--border-container-disabled);
+
+  /* ==========================================================================
+   * CALENDAR
+   * ========================================================================== */
+  
+  /* Background */
+  --background-calendar-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-calendar-default: var(--border-container-weak);
+  
+  /* Icon */
+  --icon-calendar-default: var(--icon-global-normal);
+  --icon-calendar-current-default: var(--brand-primary-main);
+  --icon-calendar-current-hover: var(--brand-primary-main);
+  --icon-calendar-current-range: var(--brand-primary-main);
+  --icon-calendar-current-active: var(--icon-global-contrast);
+  --icon-calendar-current-disabled: var(--icon-global-disabled);
+
+  /* ==========================================================================
+   * CALENDAR ITEM
+   * ========================================================================== */
+  
+  /* Background */
+  --background-calendar-item-cell-default: var(--background-container-opacity-0);
+  --background-calendar-item-cell-hover: var(--background-container-raised);
+  --background-calendar-item-cell-range: var(--background-container-raised);
+  --background-calendar-item-cell-active: var(--brand-primary-main);
+  --background-calendar-item-cell-disabled: var(--background-container-opacity-0);
+  --background-calendar-item-header-default: var(--background-container-opacity-0);
+  --background-calendar-item-header-disabled: var(--background-container-opacity-0);
+  
+  /* Border */
+  --border-calendar-item-cell-default: var(--border-container-weak);
+  --border-calendar-item-cell-hover: var(--border-container-hover);
+  --border-calendar-item-cell-range: var(--border-container-hover);
+  --border-calendar-item-cell-active: var(--border-container-selected);
+  --border-calendar-item-cell-disabled: var(--border-container-disabled);
+  --border-calendar-item-header-default: var(--border-container-weak);
+  --border-calendar-item-header-disabled: var(--border-container-disabled);
+  
+  /* Text */
+  --text-calendar-item-cell-default: var(--text-global-body);
+  --text-calendar-item-cell-hover: var(--text-global-body);
+  --text-calendar-item-cell-range: var(--text-global-primary);
+  --text-calendar-item-cell-active: var(--text-global-contrast);
+  --text-calendar-item-cell-disabled: var(--text-global-disabled);
+  --text-calendar-item-header-default: var(--text-global-header);
+  --text-calendar-item-header-disabled: var(--text-global-disabled);
+
+  /* ==========================================================================
+   * CHECKBOX
+   * ========================================================================== */
+  
+  /* Background */
+  --background-checkbox-default: var(--background-container-sunken);
+  --background-checkbox-hover: var(--background-container-sunken);
+  --background-checkbox-selected: var(--brand-primary-main);
+  --background-checkbox-disabled: var(--background-container-disabled);
+  
+  /* Border */
+  --border-checkbox-default: var(--border-container-weak);
+  --border-checkbox-hover: var(--border-container-hover);
+  --border-checkbox-selected: var(--border-container-selected);
+  --border-checkbox-disabled: var(--border-container-disabled);
+
+  /* ==========================================================================
+   * INPUT
+   * ========================================================================== */
+  
+  /* Background */
+  --background-input-default: var(--background-container-sunken);
+  --background-input-hover: var(--background-container-sunken);
+  --background-input-focus: var(--background-container-sunken);
+  --background-input-filled: var(--background-container-sunken);
+  --background-input-disabled: var(--background-container-disabled);
+  --background-input-success: var(--background-container-success-lit);
+  --background-input-error: var(--background-container-error-lit);
+  --background-input-selected: var(--brand-primary-main);
+  
+  /* Border */
+  --border-input-default: var(--border-container-weak);
+  --border-input-hover: var(--border-container-hover);
+  --border-input-selected: var(--border-container-selected);
+  --border-input-disabled: var(--border-container-disabled);
+  --border-input-success: var(--border-container-success);
+  --border-input-error: var(--border-container-error);
+  
+  /* Text */
+  --text-input-label: var(--text-global-body);
+  --text-input-placeholder: var(--text-global-placeholder);
+  --text-input-value: var(--text-global-body);
+  --text-input-value-success: var(--text-global-success-dim);
+  --text-input-value-error: var(--text-global-error-dim);
+  --text-input-disabled: var(--text-global-disabled);
+  --text-input-caption: var(--text-global-caption);
+  --text-input-caption-success: var(--text-global-success-main);
+  --text-input-caption-error: var(--text-global-error);
+  
+  /* Icon */
+  --icon-input-default: var(--icon-global-normal);
+  --icon-input-contrast: var(--icon-global-contrast);
+  --icon-input-disabled: var(--icon-global-disabled);
+  --icon-input-selected: var(--brand-primary-main);
+  --icon-input-success: var(--icon-global-success);
+  --icon-input-error: var(--icon-global-error);
+  --icon-input-placeholder: var(--icon-global-placeholder);
+
+  /* ==========================================================================
+   * INTERACTIVE ICON
+   * ========================================================================== */
+  
+  /* Background */
+  --background-interactive-icon-default: var(--background-container-opacity-0);
+  --background-interactive-icon-hover: var(--background-container-sunken);
+  --background-interactive-icon-active: var(--background-container-sunken);
+  --background-interactive-icon-disabled: var(--background-container-opacity-0);
+  
+  /* Border */
+  --border-interactive-icon-default: var(--border-container-weak);
+  --border-interactive-icon-hover: var(--border-container-weak);
+  --border-interactive-icon-active: var(--border-container-weak);
+  --border-interactive-icon-disabled: var(--border-container-disabled);
+  
+  /* Icon */
+  --icon-interactive-icon-default: var(--icon-global-normal);
+  --icon-interactive-icon-hover: var(--icon-global-normal);
+  --icon-interactive-icon-active: var(--icon-global-normal);
+  --icon-interactive-icon-disabled: var(--icon-global-disabled);
+
+  /* ==========================================================================
+   * MENU
+   * ========================================================================== */
+  
+  /* Background */
+  --background-menu-default: var(--background-container-flat);
+  --background-menu-hover: var(--background-container-raised);
+  --background-menu-selected: var(--background-container-raised);
+  --background-menu-disabled: var(--background-container-flat);
+  
+  /* Border */
+  --border-menu-default: var(--border-container-weak);
+  --border-menu-selected: var(--border-container-selected);
+  
+  /* Text */
+  --text-menu-default: var(--text-global-placeholder);
+  --text-menu-hover: var(--text-global-placeholder);
+  --text-menu-selected: var(--text-global-body);
+  --text-menu-disabled: var(--text-global-disabled);
+  
+  /* Icon */
+  --icon-menu-default: var(--text-global-placeholder);
+  --icon-menu-hover: var(--text-global-placeholder);
+  --icon-menu-selected: var(--text-global-body);
+  --icon-menu-disabled: var(--text-global-disabled);
+
+  /* ==========================================================================
+   * MODAL
+   * ========================================================================== */
+  
+  /* Background */
+  --background-modal-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-modal-default: var(--border-container-disabled);
+  
+  /* Text */
+  --text-modal-header: var(--text-global-header);
+  --text-modal-description: var(--text-global-placeholder);
+  
+  /* Icon */
+  --icon-modal-default: var(--icon-global-normal);
+
+  /* ==========================================================================
+   * POPOVER
+   * ========================================================================== */
+  
+  /* Background */
+  --background-popover-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-popover-default: var(--border-container-weak);
+  
+  /* Text */
+  --text-popover-title: var(--text-global-header);
+  --text-popover-description: var(--text-global-placeholder);
+
+  /* ==========================================================================
+   * RADIO
+   * ========================================================================== */
+  
+  /* Background */
+  --background-radio-default: var(--background-container-sunken);
+  --background-radio-hover: var(--background-container-sunken);
+  --background-radio-selected: var(--brand-primary-main);
+  --background-radio-disabled: var(--background-container-disabled);
+  
+  /* Border */
+  --border-radio-default: var(--border-container-weak);
+  --border-radio-hover: var(--border-container-hover);
+  --border-radio-selected: var(--border-container-selected);
+  --border-radio-disabled: var(--border-container-disabled);
+
+  /* ==========================================================================
+   * SIDEBAR
+   * ========================================================================== */
+  
+  /* Background */
+  --background-sidebar-default: var(--background-container-sunken);
+  --background-sidebar-hover: var(--background-container-raised);
+  --background-sidebar-selected: var(--background-container-raised);
+  
+  /* Border */
+  --border-sidebar-default: var(--background-container-sunken-lowest);
+  --border-sidebar-selected: var(--border-container-selected);
+  --border-sidebar-notification: var(--text-global-contrast);
+  
+  /* Text */
+  --text-sidebar-default: var(--text-global-placeholder);
+  --text-sidebar-hover: var(--text-global-placeholder);
+  --text-sidebar-selected: var(--text-global-body);
+  --text-sidebar-section-title: var(--text-global-placeholder);
+  
+  /* Icon */
+  --icon-sidebar-default: var(--icon-global-placeholder);
+  --icon-sidebar-hover: var(--icon-global-placeholder);
+  --icon-sidebar-selected: var(--icon-global-normal);
+  --icon-sidebar-notification: var(--icon-global-primary-dim);
+
+  /* ==========================================================================
+   * SPINNER
+   * ========================================================================== */
+  
+  /* Background */
+  --background-spinner-default: var(--brand-primary-main);
+  --background-spinner-contrast: var(--background-container-flat);
+
+  /* ==========================================================================
+   * STATS
+   * ========================================================================== */
+  
+  /* Background */
+  --background-stats-default: var(--background-container-flat);
+  --background-stats-icon-default: var(--background-container-sunken);
+  
+  /* Border */
+  --border-stats-default: var(--border-container-weak);
+  --border-stats-icon-default: var(--border-container-weak);
+  
+  /* Text */
+  --text-stats-title: var(--text-global-header);
+  --text-stats-stat: var(--text-global-header);
+  --text-stats-description: var(--text-global-placeholder);
+  
+  /* Icon */
+  --icon-stats-normal: var(--icon-global-normal);
+
+  /* ==========================================================================
+   * STEPS
+   * ========================================================================== */
+  
+  /* Background */
+  --background-steps-divider-default: var(--background-container-sunken-low);
+  --background-steps-divider-progress: var(--brand-primary-main);
+
+  /* ==========================================================================
+   * STEP ITEM
+   * ========================================================================== */
+  
+  /* Background */
+  --background-step-item-default: var(--background-container-disabled);
+  --background-step-item-active: var(--brand-primary-main);
+  --background-step-item-success: var(--brand-primary-main);
+  --background-step-item-error: var(--system-error-main);
+  
+  /* Border */
+  --border-step-item-default: var(--background-container-sunken);
+  --border-step-item-active: var(--brand-primary-main);
+  --border-step-item-success: var(--system-success-main);
+  --border-step-item-error: var(--system-error-main);
+  
+  /* Text */
+  --text-step-item-default: var(--text-global-header);
+  --text-step-item-active: var(--text-global-header);
+  --text-step-item-success: var(--text-global-header);
+  --text-step-item-error: var(--text-global-header);
+  --text-step-item-description: var(--text-global-placeholder);
+  --text-step-item-number-default: var(--text-global-placeholder);
+  --text-step-item-number-active: var(--text-global-contrast);
+  --text-step-item-number-completed: var(--text-global-contrast);
+  --text-step-item-number-error: var(--text-global-contrast);
+  
+  /* Icon */
+  --icon-step-item-default: var(--icon-global-disabled);
+  --icon-step-item-active: var(--icon-global-contrast);
+  --icon-step-item-completed: var(--icon-global-contrast);
+  --icon-step-item-error: var(--icon-global-contrast);
+
+  /* ==========================================================================
+   * SUB MENU
+   * ========================================================================== */
+  
+  /* Background */
+  --background-sub-menu-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-sub-menu-default: var(--background-container-sunken-lowest);
+  
+  /* Text */
+  --text-sub-menu-default: var(--text-global-placeholder);
+
+  /* ==========================================================================
+   * TABLE
+   * ========================================================================== */
+  
+  /* Background */
+  --background-table-cell: var(--background-container-flat);
+  --background-table-cell-focus: var(--background-container-raised);
+  --background-table-header: var(--background-container-sunken);
+  
+  /* Border */
+  --border-table-cell: var(--border-container-disabled);
+  --border-table-header: var(--background-container-sunken);
+  
+  /* Text */
+  --text-table-cell: var(--text-global-body);
+  --text-table-header: var(--text-global-header);
+  
+  /* Icon */
+  --icon-table-header: var(--icon-global-placeholder);
+  --icon-table-cell: var(--icon-global-normal);
+
+  /* ==========================================================================
+   * TABS
+   * ========================================================================== */
+  
+  /* Background */
+  --background-tabs-default: var(--background-container-opacity-0);
+  
+  /* Border */
+  --border-tabs-default: var(--border-container-weak);
+  --border-tabs-hover: var(--border-container-hover);
+  --border-tabs-selected: var(--border-container-selected);
+  
+  /* Text */
+  --text-tabs-default: var(--text-global-placeholder);
+  --text-tabs-hover: var(--text-global-body);
+  --text-tabs-selected: var(--text-global-body);
+  --text-tabs-disabled: var(--text-global-disabled);
+  
+  /* Icon */
+  --icon-tabs-default: var(--icon-global-placeholder);
+  --icon-tabs-hover: var(--icon-global-normal);
+  --icon-tabs-selected: var(--icon-global-normal);
+  --icon-tabs-disabled: var(--icon-global-disabled);
+
+  /* ==========================================================================
+   * TAB ITEM
+   * ========================================================================== */
+  
+  /* Background */
+  --background-tab-item-default: var(--background-container-opacity-0);
+  --background-tab-item-hover: var(--background-container-opacity-0);
+  --background-tab-item-active: var(--background-container-opacity-0);
+  --background-tab-item-disabled: var(--background-container-opacity-0);
+
+  /* ==========================================================================
+   * TAG
+   * ========================================================================== */
+  
+  /* Background */
+  --background-tag-icon: var(--background-container-sunken-lowest);
+  --background-tag-text: var(--background-container-sunken-lowest);
+  
+  /* Border */
+  --border-tag-icon: var(--background-container-sunken-lowest);
+  --border-tag-text: var(--background-container-sunken-lowest);
+  
+  /* Text */
+  --text-tag-icon: var(--text-global-body);
+  --text-tag-text: var(--text-global-body);
+  
+  /* Icon */
+  --icon-tag-default: var(--icon-global-normal);
+
+  /* ==========================================================================
+   * TOAST
+   * ========================================================================== */
+  
+  /* Background */
+  --background-toast-default: var(--background-container-flat);
+  
+  /* Border */
+  --border-toast-information: var(--border-container-selected);
+  --border-toast-warning: var(--border-container-warning);
+  --border-toast-alert: var(--border-container-error);
+  --border-toast-success: var(--border-container-success);
+  
+  /* Text */
+  --text-toast-title: var(--text-global-header);
+  --text-toast-description: var(--text-global-placeholder);
+  --text-toast-button: var(--text-global-link);
+  
+  /* Icon */
+  --icon-toast-normal: var(--icon-global-normal);
+  --icon-toast-information: var(--icon-global-link);
+  --icon-toast-warning: var(--icon-global-warning);
+  --icon-toast-alert: var(--icon-global-error);
+  --icon-toast-success: var(--icon-global-success);
+
+  /* ==========================================================================
+   * TOGGLE
+   * ========================================================================== */
+  
+  /* Background */
+  --background-toggle-default: var(--background-container-sunken);
+  --background-toggle-hover: var(--background-container-sunken);
+  --background-toggle-selected: var(--brand-primary-main);
+  --background-toggle-disabled: var(--background-container-disabled);
+  
+  /* Border */
+  --border-toggle-default: var(--border-container-weak);
+  --border-toggle-hover: var(--border-container-hover);
+  --border-toggle-selected: var(--border-container-selected);
+  --border-toggle-disabled: var(--border-container-disabled);
+
+  /* ==========================================================================
+   * TOOLTIP
+   * ========================================================================== */
+  
+  /* Background */
+  --background-tooltip-default: var(--background-container-contrast);
+  
+  /* Border */
+  --border-tooltip-default: var(--border-container-strong);
+  
+  /* Text */
+  --text-tooltip-default: var(--text-global-contrast);
+
+  /* ==========================================================================
+   * UPLOAD
+   * ========================================================================== */
+  
+  /* Background */
+  --background-upload-area-default: var(--background-container-sunken);
+  --background-upload-area-drag: var(--background-container-raised);
+  --background-upload-area-disabled: var(--background-container-disabled);
+  --background-upload-area-error: var(--background-container-error-lit);
+  --background-upload-file-completed: var(--background-container-sunken);
+  --background-upload-file-error: var(--background-container-error-lit);
+  
+  /* Border */
+  --border-upload-area-default: var(--border-container-weak);
+  --border-upload-area-drag: var(--border-container-hover);
+  --border-upload-area-disabled: var(--border-container-disabled);
+  --border-upload-area-error: var(--border-container-error);
+  --border-upload-file-completed: var(--border-container-weak);
+  --border-upload-file-error: var(--border-container-error);
+  
+  /* Text */
+  --text-upload-header: var(--text-global-body);
+  --text-upload-caption: var(--text-global-caption);
+  --text-upload-disabled: var(--text-global-disabled);
+  --text-upload-caption-success: var(--text-global-success-main);
+  --text-upload-caption-error: var(--text-global-error);
+  
+  /* Icon */
+  --icon-upload-default: var(--icon-global-placeholder);
+  --icon-upload-active: var(--icon-global-normal);
+  --icon-upload-disabled: var(--icon-global-disabled);
+  --icon-upload-focus: var(--icon-global-primary);
+  --icon-upload-error: var(--icon-global-error);
+}

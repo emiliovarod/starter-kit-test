@@ -1,0 +1,39 @@
+/**
+ * ==========================================================================
+ * DESIGN TOKENS
+ * ==========================================================================
+ * 
+ * Token Hierarchy:
+ * ┌─────────────────┐
+ * │   PRIMITIVES    │  Raw values (colors, spacing, fonts...)
+ * └────────┬────────┘
+ *          ▼
+ * ┌─────────────────┐
+ * │    SEMANTIC     │  Contextual meaning (text-primary, bg-surface...)
+ * └────────┬────────┘
+ *          ▼
+ * ┌─────────────────┐
+ * │   COMPONENTS    │  Component-specific (button-bg, card-border...)
+ * └─────────────────┘
+ * 
+ * RULES:
+ * - Primitives define raw values only
+ * - Semantic tokens reference primitives
+ * - Component tokens reference semantic tokens
+ * - Components NEVER use primitives directly
+ * 
+ * ==========================================================================
+ */
+
+/* Layer 1: Primitives */
+@import './primitives/colors.css';
+@import './primitives/metrics.css';
+@import './primitives/typography.css';
+
+/* Layer 2: Semantic */
+@import './semantic/colors.css';
+
+/* Layer 3: Component tokens */
+@import './components/colors.css';
+@import './components/metrics.css';
+@import './components/icons.css';

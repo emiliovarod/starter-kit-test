@@ -1,0 +1,59 @@
+/**
+ * ==========================================================================
+ * PRIMITIVE TYPOGRAPHY TOKENS
+ * ==========================================================================
+ * 
+ * Raw typography values only. No semantic meaning.
+ * These tokens should NEVER be used directly in components.
+ * 
+ * Usage: Semantic tokens reference these primitives.
+ * 
+ * ==========================================================================
+ */
+
+:root {
+  /* --------------------------------------------------------------------------
+   * FONT FAMILY
+   * -------------------------------------------------------------------------- */
+  --font-family-title: 'Cera Pro';
+  --font-family-body: 'Cera Pro';
+
+  /* --------------------------------------------------------------------------
+   * FONT SIZE
+   * -------------------------------------------------------------------------- */
+  --font-size-2xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 60px;
+  --font-size-7xl: 72px;
+  --font-size-8xl: 96px;
+  --font-size-9xl: 128px;
+
+  /* --------------------------------------------------------------------------
+   * FONT WEIGHT
+   * -------------------------------------------------------------------------- */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* --------------------------------------------------------------------------
+   * LINE HEIGHT
+   * -------------------------------------------------------------------------- */
+  --font-line-height-leading-3: 12px;
+  --font-line-height-leading-4: 16px;
+  --font-line-height-leading-5: 20px;
+  --font-line-height-leading-6: 24px;
+  --font-line-height-leading-7: 28px;
+  --font-line-height-leading-8: 32px;
+  --font-line-height-leading-9: 36px;
+  --font-line-height-leading-10: 40px;
+}

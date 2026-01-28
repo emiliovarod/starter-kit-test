@@ -1,0 +1,219 @@
+/**
+ * ==========================================================================
+ * TEXT FIELD COMPONENT STYLES
+ * ==========================================================================
+ *
+ * Visual styles for the TextField input component.
+ * Uses design tokens from tokens/components/colors.css and metrics.css
+ *
+ * Typography references:
+ * - Input text (medium): font-body-base (family: body, size: base, weight: normal, line-height: 1.6)
+ * - Input text (small): font-body-sm (family: body, size: sm, weight: normal, line-height: 1.6)
+ *
+ * States:
+ * - Default, Hover, Focus, Filled, Disabled, Success, Error
+ *
+ * ==========================================================================
+ */
+
+/* ==========================================================================
+ * BASE STYLES
+ * ========================================================================== */
+
+.text-field {
+  display: flex;
+  align-items: center;
+  gap: var(--padding-input-horizontal-between-md);
+  width: 100%;
+  background-color: var(--background-input-default);
+  border: var(--border-width-input-md) solid var(--border-input-default);
+  border-radius: var(--border-radius-input-md);
+  padding-left: var(--padding-input-horizontal-md);
+  padding-right: var(--padding-input-horizontal-md);
+  padding-top: var(--padding-input-vertical-md);
+  padding-bottom: var(--padding-input-vertical-md);
+  height: var(--size-input-height-md);
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+/* ==========================================================================
+ * SIZE VARIANTS
+ * ========================================================================== */
+
+.text-field[data-size="small"] {
+  gap: var(--padding-input-horizontal-between-sm);
+  padding-left: var(--padding-input-horizontal-sm);
+  padding-right: var(--padding-input-horizontal-sm);
+  padding-top: var(--padding-input-vertical-sm);
+  padding-bottom: var(--padding-input-vertical-sm);
+  height: var(--size-input-height-sm);
+  border-width: var(--border-width-input-sm);
+  border-radius: var(--border-radius-input-xs);
+}
+
+/* ==========================================================================
+ * INPUT STYLES (font-body-base for medium, font-body-sm for small)
+ * ========================================================================== */
+
+.text-field-input {
+  flex: 1 0 0;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  /* font-body-base */
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-transform: none;
+  text-decoration: none;
+  color: var(--text-input-value);
+  /* Default: allow text to overflow naturally */
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.text-field-input::placeholder {
+  color: var(--text-input-placeholder);
+}
+
+/* font-body-sm for small variant */
+.text-field[data-size="small"] .text-field-input {
+  font-size: var(--font-size-sm);
+}
+
+/* ==========================================================================
+ * TEXT OVERFLOW VARIANTS
+ * ========================================================================== */
+
+/* Truncate: clip text with ellipsis when it exceeds field width */
+.text-field[data-truncate="true"] .text-field-input {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+ * ICON STYLES
+ * ========================================================================== */
+
+/* Leading icon (decorative) */
+.text-field-leading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--icon-input-placeholder);
+}
+
+/* Action icon (interactive button) */
+.text-field-action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--icon-input-default);
+}
+
+.text-field-action-icon:focus-visible {
+  outline: 2px solid var(--brand-primary-main);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-rounded);
+}
+
+/* ==========================================================================
+ * HOVER STATE
+ * ========================================================================== */
+
+.text-field:hover:not([data-disabled="true"]):not([data-error="true"]):not([data-success="true"]) {
+  border-color: var(--border-input-hover);
+  background-color: var(--background-input-hover);
+}
+
+/* ==========================================================================
+ * FOCUS STATE
+ * ========================================================================== */
+
+.text-field:focus-within:not([data-disabled="true"]):not([data-error="true"]):not([data-success="true"]) {
+  border-color: var(--border-input-selected);
+  background-color: var(--background-input-focus);
+}
+
+/* ==========================================================================
+ * ERROR STATE
+ * ========================================================================== */
+
+.text-field[data-error="true"] {
+  background-color: var(--background-input-error);
+  border-color: var(--border-input-error);
+}
+
+.text-field[data-error="true"] .text-field-input {
+  color: var(--text-input-value-error);
+}
+
+.text-field[data-error="true"] .text-field-leading-icon {
+  color: var(--icon-input-error);
+}
+
+.text-field[data-error="true"] .text-field-action-icon {
+  color: var(--icon-input-error);
+}
+
+/* ==========================================================================
+ * SUCCESS STATE
+ * ========================================================================== */
+
+.text-field[data-success="true"] {
+  background-color: var(--background-input-success);
+  border-color: var(--border-input-success);
+}
+
+.text-field[data-success="true"] .text-field-input {
+  color: var(--text-input-value-success);
+}
+
+.text-field[data-success="true"] .text-field-leading-icon {
+  color: var(--icon-input-success);
+}
+
+.text-field[data-success="true"] .text-field-action-icon {
+  color: var(--icon-input-success);
+}
+
+/* ==========================================================================
+ * DISABLED STATE
+ * ========================================================================== */
+
+.text-field[data-disabled="true"] {
+  background-color: var(--background-input-disabled);
+  border-color: var(--border-input-disabled);
+  cursor: not-allowed;
+}
+
+.text-field[data-disabled="true"] .text-field-input {
+  color: var(--text-input-disabled);
+  cursor: not-allowed;
+}
+
+.text-field[data-disabled="true"] .text-field-input::placeholder {
+  color: var(--text-input-disabled);
+}
+
+.text-field[data-disabled="true"] .text-field-leading-icon {
+  color: var(--icon-input-disabled);
+}
+
+.text-field[data-disabled="true"] .text-field-action-icon {
+  color: var(--icon-input-disabled);
+  cursor: not-allowed;
+}
